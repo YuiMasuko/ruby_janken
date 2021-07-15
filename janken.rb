@@ -10,7 +10,6 @@ class Player
         puts "数字を入力してください。"
         puts "0:グー, 1:チョキ, 2:パー"
         input_hand = gets.chomp
-        return input_hand
       end
     end
   end
@@ -31,6 +30,7 @@ class Janken
       puts "あいこ"
       true
     elsif (player_hand == "0" && enemy_hand == "1") || (player_hand == "1" && enemy_hand == "2") || (player_hand == "2" && enemy_hand == "0")
+      puts "あなたの勝ちです"
       false
     else
       puts "あなたの負けです"
